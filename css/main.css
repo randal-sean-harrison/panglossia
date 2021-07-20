@@ -1,0 +1,17 @@
+/* background and colors */
+.bg-alice-blue {
+  background: #f6f7fb;
+}
+
+/* cypher classes  */
+.cypher {
+  background: mistyrose;
+  padding: .1rem .4rem .1rem .4rem;
+  border-bottom: 1px dashed gray;
+}
+
+.decypher {
+  background: honeydew;
+  padding: .1rem .4rem .1rem .4rem;
+  border-bottom: 1px dashed gray;
+}
