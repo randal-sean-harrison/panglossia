@@ -1,25 +1,36 @@
 $(document).ready(function() {
 
-  // cypher and decypher buttons
-  $(".cypher").on("click", function() {
+  // Show all and hide all
+  $("#toggle-cypher-button").on("click", function() {
 
-    if ($(this).next().hasClass("d-none")) {
-      $(this).next().removeClass("d-none").css("display", "inline");
+    // if anything with class of "decypher" is invisible...
+    if ($(".decypher").hasClass("d-none")) {
+      // show all the things with class of decypher
+      $(".decypher").removeClass("d-none").css("display", "inline");
+      // change the text in the button to hide all
+      $("#toggle-cypher-button").text("Hide all");
     } else {
-      $(this).next().addClass("d-none").css("display", "none");
+      // Hide all the things with class of decypher
+      $(".decypher").addClass("d-none").css("display", "none");
+      // change the text in the button to hide all
+      $("#toggle-cypher-button").text("Show all");
     }
-
 
   });
 
 
-  // $(".decypher").on("click", function() {
-  //
-  //   var explication = $(this).data("explicate");
-  //
-  //
-  // });
+  // CLicking on individual cypher classes
+  $(".cypher").on("click", function() {
 
+    if ($(this).next().hasClass("d-none")) {
+      $(this).next().fadeIn("fast").removeClass("d-none").css("display", "inline");
+    } else {
+      $(this).next().fadeOut("fast", function() {
+        $(this).addClass("d-none").css("display", "none");
+      });
+    }
+
+  });
 
   // Set options for popovers per page with javascript objects
   $('[data-toggle="popover"]').popover({

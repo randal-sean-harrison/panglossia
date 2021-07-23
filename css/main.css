@@ -1,3 +1,34 @@
+:root {
+  /* root color variables allows you to use the name instead of hex values */
+  --bright-blue: #007bff;
+  --light-grey-body: #fafafa;
+  --ghost-white: #f5f5fA;
+  --alice-blue: aliceblue;
+  --slate-gray: lightslategray;
+  --silver: silver;
+  --graphite: #506578;
+  --trench-blue: #406885;
+  --light-blue: #d0e9fe;
+  --chocolate: rgb(210, 105, 30);
+  --maroon: #9c2b33;
+  --nd-blue: #20364c;
+  --nd-gold: #c99700;
+  --page-bg: #f7f9fa;
+  --light-gray: #e2e6ea;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1rem;
+  background: var(--light-grey-body);
+}
+
+#tab-content,
+#toc,
+#page-header {
+  font-family: 'Noto Serif', serif;
+}
+
 /* background and colors */
 .bg-alice-blue {
   background: #f6f7fb;
@@ -17,7 +48,7 @@
   cursor: help;
 }
 
-#main-thing h4 {
-  color: chocolate;
-  font-size: 4rem;
+#tab-content h5 {
+  color: maroon;
+  font-size: 1.4rem;
 }

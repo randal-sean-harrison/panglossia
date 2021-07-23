@@ -9,6 +9,13 @@
   <title>Arnaud Final</title>
   <link rel="stylesheet" href="css/main.css">
 
+
+<!-- Google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -34,9 +41,9 @@
       <!-- HEADING ROW --------------------------------------------------------------------->
       <div class="row">
 
-        <div class="col-12">
+        <div class="col-12" id="page-header">
             <p class="text-right">
-            <button type="button" class="btn btn-primary" id="toggle-cypher-button">Decypher</button>
+            <button type="button" class="btn btn-primary" id="toggle-cypher-button">Show all</button>
           </p>
 
           <h1>The Text of Something</h1>
@@ -51,14 +58,14 @@
       <!-- TEXT  ROW --------------------------------------------------------------------->
 
       <div class='row my-5'>
-        <div class='col-sm-4'>
+        <div class='col-sm-4' id="toc">
           <ul class='nav flex-column nav-pills' role='tablist'>
-            <li class='nav-item bg-alice-blue'><a class='nav-link active' href='#panel21353105' data-toggle='tab'>Prefatory</a></li>
-            <li class='nav-item bg-alice-blue'><a class='nav-link' href='#panel60920562' data-toggle='tab'>Prefatory</a></li>
-            <li class='nav-item bg-alice-blue'><a class='nav-link' href='#panel12817900' data-toggle='tab'>Prefatory</a></li>
-            <li class='nav-item bg-alice-blue'><a class='nav-link' href='#panel56849855' data-toggle='tab'>Prefatory</a></li>
-            <li class='nav-item bg-alice-blue'><a class='nav-link' href='#panel30829105' data-toggle='tab'>Prefatory</a></li>
-            <li class='nav-item bg-alice-blue mb-4'><a class='nav-link' href='#panel23200451' data-toggle='tab'>Prefatory</a></li>
+            <li class='nav-item bg-alice-blue'><a class='nav-link active' href='#panel21353105' data-toggle='tab'>Prefatory 1</a></li>
+            <li class='nav-item bg-alice-blue'><a class='nav-link' href='#panel60920562' data-toggle='tab'>Prefatory 2</a></li>
+            <li class='nav-item bg-alice-blue'><a class='nav-link' href='#panel12817900' data-toggle='tab'>Prefatory 3</a></li>
+            <li class='nav-item bg-alice-blue'><a class='nav-link' href='#panel56849855' data-toggle='tab'>Prefatory 4</a></li>
+            <li class='nav-item bg-alice-blue'><a class='nav-link' href='#panel30829105' data-toggle='tab'>Prefatory 5</a></li>
+            <li class='nav-item bg-alice-blue mb-4'><a class='nav-link' href='#panel23200451' data-toggle='tab'>Prefatory 6</a></li>
 
 
             <li class='nav-item'><a class='nav-link' href='#panel62206108' data-toggle='tab'>Section 1</a></li>
@@ -75,30 +82,30 @@
           </ul>
         </div>
 
-        <div class='col-sm-8'>
-          <div class='tab-content' id='tab-Contentundefined'>
+        <div class='col-sm-8 shadow p-3'>
+          <div class='tab-content' id='tab-content'>
             <div class='mt-3 ml-2 tab-pane fade show active' id='panel21353105' role='tabpanel' aria-labelledby='...'>
-              <h5>Content Area 1</h5>
+              <h5>Prefatory 1</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
             </div>
             <div class='mt-3 ml-2 tab-pane fade' id='panel60920562' role='tabpanel' aria-labelledby='...'>
-              <h5>Content Area 2</h5>
+              <h5>Prefatory 2</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
             </div>
             <div class='mt-3 ml-2 tab-pane fade' id='panel12817900' role='tabpanel' aria-labelledby='...'>
-              <h5>Content Area 3</h5>
+              <h5>Prefatory 3</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
             </div>
             <div class='mt-3 ml-2 tab-pane fade' id='panel56849855' role='tabpanel' aria-labelledby='...'>
-              <h5>Content Area 4</h5>
+              <h5>Prefatory 4</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
             </div>
             <div class='mt-3 ml-2 tab-pane fade' id='panel30829105' role='tabpanel' aria-labelledby='...'>
-              <h5>Content Area 5</h5>
+              <h5>Prefatory 5</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
             </div>
             <div class='mt-3 ml-2 tab-pane fade' id='panel23200451' role='tabpanel' aria-labelledby='...'>
-              <h5>Content Area 6</h5>
+              <h5>Prefatory 6</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
             </div>
             <div class='mt-3 ml-2 tab-pane fade' id='panel62206108' role='tabpanel' aria-labelledby='...'>
@@ -108,11 +115,11 @@
   stirred the humors of the foolish Inhabitants of the earth to insurrections, to
   warr and praeliation; To effect which, our practise hath been to bring on the
   beggarliest and toughest peeple upon the nicest and softest, we brought the
-  <span class="cypher" data-explicate="Lorem">Cuprinian</span><span class="decypher d-none" data-html="true" data-container="body" data-toggle="popover" data-animation="true" data-placement="top" data-trigger="click" data-offset="0, 30" title="" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, qui, tempora. Ipsam nihil sed temporibus, quae ducimus nostrum pariatur natus doloribus.">Swede</span> upon the
-  <span class="cypher">Aetonian</span><span class="decypher d-none">German</span>, and the
-  <span class="cypher">Zoundanian</span><span class="decypher d-none">Dane</span>, the
-  <span class="cypher">Tarragon</span><span class="decypher d-none">Catalan</span>, and
-  <span class="cypher">Cinqfoyl</span><span class="decypher d-none">Some other thing</span>
+  <span class="cypher" data-explicate="Lorem">Cuprinian</span><span class="decypher d-none" data-html="true" data-container="body" data-toggle="popover" data-animation="true" data-placement="top" data-trigger="click" data-offset="0, 20" title="" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, qui, tempora. Ipsam nihil sed temporibus, quae ducimus nostrum pariatur natus doloribus.">Swede</span> upon the
+  <span class="cypher" data-explicate="Lorem">Cuprinian</span><span class="decypher d-none" data-html="true" data-container="body" data-toggle="popover" data-animation="true" data-placement="top" data-trigger="click" data-offset="0, 20" title="" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, qui, tempora. Ipsam nihil sed temporibus, quae ducimus nostrum pariatur natus doloribus.">Aetonian</span><span class="decypher d-none">German</span>, and the
+  <span class="cypher" data-explicate="Lorem">Cuprinian</span><span class="decypher d-none" data-html="true" data-container="body" data-toggle="popover" data-animation="true" data-placement="top" data-trigger="click" data-offset="0, 20" title="" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, qui, tempora. Ipsam nihil sed temporibus, quae ducimus nostrum pariatur natus doloribus.">Zoundanian</span><span class="decypher d-none">Dane</span>, the
+  <span class="cypher" data-explicate="Lorem">Cuprinian</span><span class="decypher d-none" data-html="true" data-container="body" data-toggle="popover" data-animation="true" data-placement="top" data-trigger="click" data-offset="0, 20" title="" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, qui, tempora. Ipsam nihil sed temporibus, quae ducimus nostrum pariatur natus doloribus.">Tarragon</span><span class="decypher d-none">Catalan</span>, and
+  <span class="cypher" data-explicate="Lorem">Cuprinian</span><span class="decypher d-none" data-html="true" data-container="body" data-toggle="popover" data-animation="true" data-placement="top" data-trigger="click" data-offset="0, 20" title="" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, qui, tempora. Ipsam nihil sed temporibus, quae ducimus nostrum pariatur natus doloribus.">Cinqfoyl</span><span class="decypher d-none">Some other thing</span>
 </p>
             </div>
             <div class='mt-3 ml-2 tab-pane fade' id='panel18030759' role='tabpanel' aria-labelledby='...'>
@@ -161,25 +168,14 @@
       <!-- row -->
 
 
-<div id="main-thing">
-  <h4>Lorem Ipsum</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis deserunt, ipsam ab incidunt numquam at qui delectus! Consequatur accusantium autem aliquam, dolore, nam nostrum, quia fuga voluptates itaque, veritatis ab!</p>
-    <h4>Lorem Ipsum</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis deserunt, ipsam ab incidunt numquam at qui delectus! Consequatur accusantium autem aliquam, dolore, nam nostrum, quia fuga voluptates itaque, veritatis ab!</p>
-
-  </div>
-
-
-
-
     </div>
   </div>
   <!-- container -->
 
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <script src="js/main.js"></script>
