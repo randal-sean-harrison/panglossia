@@ -14,4 +14,10 @@
   background: honeydew;
   padding: .1rem .4rem .1rem .4rem;
   border-bottom: 1px dashed gray;
+  cursor: help;
+}
+
+#main-thing h4 {
+  color: chocolate;
+  font-size: 4rem;
 }
